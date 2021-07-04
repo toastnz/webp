@@ -1,0 +1,19 @@
+---
+Name: toastnz-webp
+---
+
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Assets\Image:
+    class: Intervention\Image\WebP\Injectors\Image
+
+  Intervention\Image\ImageManager:
+    constructor:
+      - { driver: WebP }  
+
+SilverStripe\Assets\Storage\DBFile:
+  extensions:
+    - Intervention\Image\WebP\Extensions\DBFileExtension
+
+SilverStripe\Assets\File:
+  allowed_extensions:
+    - webp

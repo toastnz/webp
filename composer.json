@@ -1,0 +1,12 @@
+{
+    "name": "toastnz/webp",
+    "description": "Silverstripe WebP",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "require": {
+      "silverstripe/cms": "^4",
+      "silverstripe/framework": "^4",
+      "composer/installers": "*"
+    }
+  }
+  
