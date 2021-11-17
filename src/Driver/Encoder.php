@@ -158,4 +158,16 @@ class Encoder extends \Intervention\Image\AbstractEncoder
         );
     }
 
+    /**
+     * Processes and returns encoded image as HEIC string
+     *
+     * @return string
+     */
+    protected function processHeic()
+    {
+        throw new NotSupportedException(
+            "HEIC format is not supported by Gd Driver."
+        );
+    }
+    
 }
